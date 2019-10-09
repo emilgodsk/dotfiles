@@ -15,6 +15,7 @@ brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
 
+cask "google-chrome"
 cask "bettertouchtool"
 cask "clion"
 cask "discord"
