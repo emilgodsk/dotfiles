@@ -27,6 +27,9 @@ ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 # Symlink the EditorConfig config file to the home directory
 ln -s $HOME/.dotfiles/.editorconfig $HOME/.editorconfig
 
+# Symlink the EditorConfig config file to the home directory
+ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
