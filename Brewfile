@@ -3,7 +3,9 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+
 brew "openssl"
+brew "git"
 brew "composer"
 brew "dnsmasq", restart_service: true
 brew "ffmpeg"
@@ -13,6 +15,7 @@ brew "php", restart_service: true
 brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
+
 cask "bettertouchtool"
 cask "clion"
 cask "discord"
