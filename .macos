@@ -248,6 +248,9 @@ defaults write com.apple.dock wvous-br-corner -int 0
 # Don't show recently used applications in the Dock
 defaults write com.Apple.Dock show-recents -bool false
 
+# Position the dock on the right side of the screen
+defaults write com.apple.Dock orientation -string "right"
+
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
