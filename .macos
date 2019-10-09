@@ -254,6 +254,10 @@ defaults write com.Apple.Dock show-recents -bool false
 # Position the dock on the right side of the screen
 defaults write com.apple.Dock orientation -string "right"
 
+# Edit dock hide/show speed and delay
+defaults write com.apple.dock autohide-delay -int 0
+defaults write com.apple.dock autohide-time-modifier -float 0.4
+
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
