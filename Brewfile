@@ -5,7 +5,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 
 brew "openssl"
-brew "git"
 brew "composer"
 brew "dnsmasq", restart_service: true
 brew "ffmpeg"
