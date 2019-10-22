@@ -12,7 +12,6 @@ brew "mackup"
 brew "node"
 brew "php", restart_service: true
 brew "youtube-dl"
-brew "zsh"
 brew "zsh-completions"
 
 cask "google-chrome"
