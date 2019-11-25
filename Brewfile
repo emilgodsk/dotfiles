@@ -4,7 +4,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 
-brew "openssl"
 brew "composer"
 brew "dnsmasq", restart_service: true
 brew "ffmpeg"
