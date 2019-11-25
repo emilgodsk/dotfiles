@@ -1,6 +1,3 @@
-COMPUTER_NAME="Emil Gs MacBook Pro"
-COMPUTER_NAME_SPACE_SAFE="Emil-Gs-MacBook-Pro"
-
 osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
@@ -14,10 +11,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "$COMPUTER_NAME"
-sudo scutil --set HostName "$COMPUTER_NAME"
-sudo scutil --set LocalHostName "$COMPUTER_NAME_SPACE_SAFE"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+# sudo scutil --set ComputerName "Emil Gs MacBook Pro"
+# sudo scutil --set HostName "Emil Gs MacBook Pro"
+# sudo scutil --set LocalHostName "Emil-Gs-MacBook-Pro"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Emil Gs MacBook Pro"
 
 # Set language and text formats
 defaults write NSGlobalDomain AppleLanguages -array "en_US"
