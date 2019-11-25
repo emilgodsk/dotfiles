@@ -32,4 +32,4 @@ ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source .macos
+# source .macos
