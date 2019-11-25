@@ -20,7 +20,7 @@ sudo scutil --set LocalHostName "$COMPUTER_NAME_SPACE_SAFE"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
 # Set language and text formats
-defaults write NSGlobalDomain AppleLanguages -array "(en_US)"
+defaults write NSGlobalDomain AppleLanguages -array "en_US"
 defaults write NSGlobalDomain AppleLocale -string "en_DK"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
@@ -30,7 +30,7 @@ defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
 sudo systemsetup -settimezone "Europe/Copenhagen" > /dev/null
 
 # Disable Sudden Motion Sensor
-sudo pmset -a sms 0
+# sudo pmset -a sms 0
 
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
@@ -135,11 +135,11 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSw
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 1
 
 # Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-#defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-#defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+# defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 ###############################################################################
 # Screen                                                                      #
@@ -172,7 +172,7 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -196,16 +196,16 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Disable the warning when changing a file extension
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+# defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Disable disk image verification
-defaults write com.apple.frameworks.diskimages skip-verify -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+# defaults write com.apple.frameworks.diskimages skip-verify -bool true
+# defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+# defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # Use AirDrop over every interface.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
@@ -216,7 +216,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+# defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
@@ -265,8 +265,8 @@ defaults write com.apple.dock autohide-time-modifier -float 0.4
 defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
 
 # Disable send and reply animations in Mail.app
-defaults write com.apple.mail DisableReplyAnimations -bool true
-defaults write com.apple.mail DisableSendAnimations -bool true
+# defaults write com.apple.mail DisableReplyAnimations -bool true
+# defaults write com.apple.mail DisableSendAnimations -bool true
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
@@ -281,7 +281,7 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # defaults write com.apple.mail MailSound -string ""
 
 # Disable sound for other mail actions
-defaults write com.apple.mail PlayMailSounds -bool false
+# defaults write com.apple.mail PlayMailSounds -bool false
 
 # Mark all messages as read when opening a conversation
 defaults write com.apple.mail ConversationViewMarkAllAsRead -bool true
@@ -290,8 +290,8 @@ defaults write com.apple.mail ConversationViewMarkAllAsRead -bool true
 defaults write com.apple.mail IndexTrash -bool false
 
 # Automatically check for new message (not every 5 minutes)
-defaults write com.apple.mail AutoFetch -bool true
-defaults write com.apple.mail PollTime -string "-1"
+# defaults write com.apple.mail AutoFetch -bool true
+# defaults write com.apple.mail PollTime -string "-1"
 
 # Show most recent message at the top in conversations
 # defaults write com.apple.mail ConversationViewSortDescending -bool true
@@ -301,7 +301,7 @@ defaults write com.apple.mail PollTime -string "-1"
 ###############################################################################
 
 # Show week numbers (10.8 only)
-defaults write com.apple.iCal "Show Week Numbers" -bool true
+# defaults write com.apple.iCal "Show Week Numbers" -bool true
 
 # Week starts on monday
 defaults write com.apple.iCal "first day of week" -int 1
