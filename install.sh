@@ -21,6 +21,9 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Symlink the Mackup config file to the home directory
+ln -s $HOME/.dotfiles/.mackup $HOME/.mackup
+
 # Symlink the EditorConfig config file to the home directory
 ln -s $HOME/.dotfiles/.editorconfig $HOME/.editorconfig
 
