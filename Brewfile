@@ -4,11 +4,12 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 
+brew "node"
+brew "yarn"
 brew "composer"
 brew "dnsmasq", restart_service: true
 brew "ffmpeg"
 brew "mackup"
-brew "node"
 brew "php", restart_service: true
 brew "youtube-dl"
 brew "zsh-completions"
