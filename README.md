@@ -28,15 +28,16 @@ After going to our checklist above and making sure you backed everything up, we'
 
 If you did all of the above you may now follow these install instructions to setup a new Mac.
 
-1. Update macOS to the latest version with the App Store
-2. Install Xcode from the App Store, open it and accept the license agreement
-3. Install macOS Command Line Tools by running `xcode-select --install`
-4. Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `600`
-5. Clone this repo to `~/.dotfiles`
-6. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
-7. Run `install.sh` to start the installation
-8. Restore preferences by running `mackup restore`
-9. Restart your computer to finalize the process
+1. Run `./.macos` to setup the mac defaults
+2. Update macOS to the latest version with the App Store
+3. Install Xcode from the App Store, open it and accept the license agreement
+4. Install macOS Command Line Tools by running `xcode-select --install`
+5. Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+6. Clone this repo to `~/.dotfiles`
+7. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
+8. Run `install.sh` to start the installation
+9. Restore preferences by running `mackup restore`
+10. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 
