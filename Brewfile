@@ -14,7 +14,6 @@ brew "php", restart_service: true
 brew "youtube-dl"
 brew "zsh-completions"
 
-cask "anaconda"
 cask "bettertouchtool"
 cask "clion"
 cask "discord"
