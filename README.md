@@ -37,6 +37,19 @@ If you did all of the above you may now follow these install instructions to set
 7. Run `install.sh` to start the installation
 8. Restore preferences by running `mackup restore`
 9. Restart your computer to finalize the process
+10. Setup DNSmasq for .test domains [Article](https://www.stevenrombauts.be/2018/01/use-dnsmasq-instead-of-etc-hosts/) - See instructions below
+
+#### Setup DNSmasq
+
+1. Make sure `conf-dir=/usr/local/etc/dnsmasq.d,*.conf` is enabled in the file `/usr/local/etc/dnsmasq.conf`.
+
+2. After that create a file `/usr/local/etc/dnsmasq.d/development.conf` and add the following to it: `address=/.test/127.0.0.1`
+
+3. After that, create a resolver: `sudo mkdir /etc/resolver`, and create a file inside: `sudo touch /etc/resolver/test` and add the following to it: `nameserver 127.0.0.1`
+
+4. Make sure to restart dnsmasq for the changes to take place `brew services restart dnsmasq`
+
+5. Test the dnsmasq conf with `dig foobar.test @127.0.0.1` and test the resolver is setup with `scutil --dns` (Notice: it might take a while for the dns resolver to be recoqnized)
 
 Your Mac is now ready to use!
 

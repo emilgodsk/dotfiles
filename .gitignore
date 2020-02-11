@@ -7,3 +7,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+#Brewfile lock
+Brewfile.lock.json
