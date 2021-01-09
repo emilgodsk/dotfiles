@@ -16,9 +16,10 @@ If you did all of the above you may now follow these install instructions to set
 
 1. Update macOS to the latest version & Install Xcode from the App Store
 2. Open Xcode and accept the license agreement and run the `xcode-select --install` command in the terminal
-3. Clone this repo to `~/.dotfiles`
-4. Run `install.sh` to start the installation
-5. Restart your computer to finalize the process
+3. Setup ssh keys for accessing repositories
+4. Clone this repo to `~/.dotfiles`
+5. Run `install.sh` to start the installation
+6. Restart your computer to finalize the process
 
 ## Thanks To...
 
