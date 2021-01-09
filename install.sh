@@ -4,8 +4,11 @@ echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
+
+# Install oh-my-zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Update Homebrew recipes
 brew update
@@ -18,18 +21,11 @@ brew bundle
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
-
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup $HOME/.mackup
-
 # Symlink the EditorConfig config file to the home directory
 ln -s $HOME/.dotfiles/.editorconfig $HOME/.editorconfig
 
 # Symlink the EditorConfig config file to the home directory
 ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
 
-# Set macOS preferences
-# We will run this last because this will reload the shell
-# source .macos
+# Install nvm
+/bin/bash -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash"

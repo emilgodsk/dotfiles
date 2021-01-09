@@ -5,37 +5,37 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 
-brew "ansible"
-brew "node"
-brew "yarn"
 brew "ffmpeg"
-brew "mackup"
 brew "youtube-dl"
 brew "zsh-completions"
 
-cask "bettertouchtool"
-cask "discord"
-cask "docker"
+# Productivity
 cask "dropbox"
-cask "figma"
-cask "firefox"
-cask "gimp"
-cask "gitkraken"
-cask "google-chrome"
-cask "handbrake"
-cask "intellij-idea"
-cask "java"
 cask "microsoft-office"
-cask "phantomjs"
-cask "phpstorm"
-cask "postman"
-cask "slack"
 cask "sonos"
 cask "spotify"
-cask "tableplus"
-cask "teamviewer"
-cask "tower"
-cask "visual-studio-code"
 cask "vlc"
 cask "vyprvpn"
+
+# Web related
+cask "brave-browser"
+
+# Social
+cask "discord"
+cask "microsoft-teams"
+cask "slack"
+
+# Design
+cask "figma"
+cask "gimp"
+
+# Mac Improvements
+cask "rectangle"
+
+# Development
+cask "gitkraken"
+cask "docker"
+cask "postman"
+cask "tableplus"
+cask "visual-studio-code"
 cask "webstorm"
