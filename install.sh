@@ -2,13 +2,13 @@
 
 echo "Setting up your Mac..."
 
+# Install oh-my-zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
-
-# Install oh-my-zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Update Homebrew recipes
 brew update
@@ -24,8 +24,11 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the EditorConfig config file to the home directory
 ln -s $HOME/.dotfiles/.editorconfig $HOME/.editorconfig
 
-# Symlink the EditorConfig config file to the home directory
+# Symlink the git ignore file to the home directory
 ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
+
+# Symlink the git config file to the home directory
+ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
 # Install nvm
 /bin/bash -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash"
