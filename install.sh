@@ -2,9 +2,6 @@
 
 echo "Setting up your Mac..."
 
-# Install oh-my-zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
