@@ -24,6 +24,8 @@ cask "brave-browser"
 cask "discord"
 cask "microsoft-teams"
 cask "slack"
+cask "messenger"
+cask "zoom"
 
 # Design
 cask "figma"
