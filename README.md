@@ -14,14 +14,13 @@ After going to our checklist above and making sure you backed everything up, we'
 
 If you did all of the above you may now follow these install instructions to setup a new Mac.
 
-1. Update macOS to the latest version & Install Xcode from the App Store
-2. Open Xcode and accept the license agreement and run the `xcode-select --install` command in the terminal
-3. Setup ssh keys for accessing repositories
-4. Clone this repo to `~/.dotfiles`
-5. Install oh-my-zsh: `curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh`
-6. Run `install.sh` to start the installation
-7. Run the .macos: `source .macos`
-8. Restart your computer to finalize the process
+1. Update macOS to the latest version & Install Xcode Command line tools `xcode-select --install`
+2. Setup ssh keys for accessing repositories
+3. Clone this repo to `~/.dotfiles`
+4. Install oh-my-zsh: `curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh`
+5. Run `install.sh` to start the installation
+6. Run the .macos: `source .macos`
+7. Restart your computer to finalize the process
 
 ## Thanks To...
 

@@ -11,7 +11,6 @@ fi
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
@@ -28,4 +27,4 @@ ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
 # Install nvm
-/bin/bash -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash"
+/bin/bash -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash"
