@@ -1,3 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/core"
+
 brew "git"
 brew "dotnet"
 brew "ffmpeg"
